@@ -1,7 +1,7 @@
 # MyUbuntuInstallation
 shell scripts for my current settings in ubuntu. 
 
-##install.sh
+## install.sh
 
 This script is my initial running script in case I updated my install ubuntu new version. It has been tested on Ubuntu 18.04.
 
