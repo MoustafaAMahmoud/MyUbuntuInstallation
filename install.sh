@@ -6,17 +6,17 @@
 #version         :0.1
 #usage  		 :bash install.sh
 #notes           :this script needs sudo access
-#bash_version    :GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)
+#bash_version    :GNU bash, version 5.0.16(1)-release (x86_64-pc-linux-gnu)
 #Below is my tested environment
-				 #NAME="Ubuntu"
-				 #VERSION="18.04.4 LTS (Bionic Beaver)"
-				 #ID=ubuntu
-				 #ID_LIKE=debian
-				 #PRETTY_NAME="Ubuntu 18.04.4 LTS"
-				 #VERSION_ID="18.04"
-				 #HOME_URL="https://www.ubuntu.com/"
-				 #VERSION_CODENAME=bionic
-				 #UBUNTU_CODENAME=bionic
+				#NAME="Ubuntu"
+				#VERSION="20.04 LTS (Focal Fossa)"
+				#ID=ubuntu
+				#ID_LIKE=debian
+				#PRETTY_NAME="Ubuntu 20.04 LTS"
+				#VERSION_ID="20.04"
+				#HOME_URL="https://www.ubuntu.com/"
+				#VERSION_CODENAME=focal
+				#UBUNTU_CODENAME=focal
 
 
 #==============================================================================
@@ -86,9 +86,9 @@ wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz;
 #choose another name if you need
 mkdir install-tl-untar && tar -xzf install-tl-unx.tar.gz -C install-tl-untar --strip-components 1;
 ./install-tl-untar/install-tl;
-export PATH=/usr/local/texlive/2017/bin/x86_64-linux:$PATH
-export INFOPATH=$INFOPATH:/usr/local/texlive/2017/texmf-dist/doc/info
-export MANPATH=$MANPATH:/usr/local/texlive/2017/texmf-dist/doc/man
+export PATH=/usr/local/texlive/2020/bin/x86_64-linux:$PATH
+export INFOPATH=$INFOPATH:/usr/local/texlive/2020/texmf-dist/doc/info
+export MANPATH=$MANPATH:/usr/local/texlive/2020/texmf-dist/doc/man
 apt install equivs --no-install-recommends
 mkdir -p /tmp/tl-equivs && cd /tmp/tl-equivs
 equivs-control texlive-local
@@ -100,10 +100,6 @@ tlmgr update --all
 tlmgr --gui
 apt install perl-tk --no-install-recommends
 
-
-
-#symbolic_links
-#ln -s /media/moustafa/Main_Hard/Learning/Master/Master_thesis/Master_Thesis/ /home/moustafa/
 
 #install R
 #apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
