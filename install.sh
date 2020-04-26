@@ -79,7 +79,6 @@ snap install intellij-idea-community --classic
 snap install pycharm-community --classic
 
 
-
 #install tex vanilla TeXLive on Debian or Ubuntu
 #reference https://tex.stackexchange.com/a/95373
 wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz;
