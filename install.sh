@@ -27,8 +27,8 @@ apt update -y
 apt upgrade -y 
    
 
-# Java, Git, snap, gnome-tweaks,chrome web browser
-apt install curl openjdk-8-jdk openjdk-8-jre git snapd gnome-tweaks software-properties-common wget perl-tk apt-transport-https -y
+# Java, Git, snap, gnome-tweaks,chrome web browser, maven
+apt install curl openjdk-8-jdk openjdk-8-jre git snapd gnome-tweaks software-properties-common wget perl-tk apt-transport-https mvn -y 
 
 apt --fix-broken install -y
 
