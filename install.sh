@@ -45,7 +45,7 @@ dpkg -i scala-2.11.8.deb
 
 ######################  Add Repos ###########################################
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add - #sublime
-apt-add-repository "deb https://download.sublimetext.com/ apt/stable/" #sublime
+apt-add-repository "deb https://download.sublimetext.com/ apt/stable/" -y #sublime
 add-apt-repository ppa:deadsnakes/ppa -y #python
 add-apt-repository ppa:ubuntuhandbook1/audacity -y #audacity
 add-apt-repository ppa:sunderme/texstudio -y #texstudio
